@@ -1,57 +1,28 @@
-import React, { useState, Components }from 'react';
-import './App.css';
-import NavBar from '../src/components/ui/Navbar';
-// import Home from './pages/home/home.js';
+
+import React from 'react'; 
+// import React, { useState, Component }from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from '../src/components/ui/Navbar';
+import Home from './pages/home/home';
 // import AvailablePuppies from './pages/availablePuppies/availablePuppies';
 // import GuardianHome from './pages/guardianHome/guardianHome';
 // import About from './pages/about/about';
 // import ContactUs from './pages/contactUs/contactUs';
 
-function App() {
+const App = () => {
+return (
+  <Router>
+    <div>
+      <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          { /* <Route exact path="/About" component={About} />
+          <Route exact path="/AvailablePuppies" component={AvailablePuppies} />
+          <Route exact path="/GuardianHome" component={GuardianHome} />
+          <Route exact path="/ContactUs" component={ContactUs} /> */}
+        </Switch>
+    </div>
+  </Router>
+);
 
-  const [displayContent, setDisplayContent] = useState("Home");
-
-  this.state = {
-          loggedIn: false,
-          username: null
-        }  
-
-  const renderPage = () => {
-    console.log("State-" + displayContent)
-    switch (displayContent) {
-      case "Home":
-        return <Home />
-      case "AvailablePuppies":
-        return <AvailablePuppies />
-      case "GuardianHome":
-        return <GuardianHome />
-      case "About":
-        return <About />
-      case "ContactUs":
-        return <ContactUs />
-      default:
-        return <Home />
-    }
-  }
-      return (
-      
-        <div className="contentSection">
-          <NavBar 
-      displayContent={setDisplayContent}
-      />
-              {renderPage()}
-
-        </div>
-      )
-}
-
-export default App;
-
-// class App extends Component {
-//   constructor() {
-//     super()
-//     this.state = {
-//       loggedIn: false,
-//       username: null
-//     }
-//   }
+export default App
