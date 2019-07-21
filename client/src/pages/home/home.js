@@ -20,6 +20,12 @@ render () {
                     </BlogSection>
                 </MDBCol>
             </MDBRow>
+            <MDBRow>
+                <MDBCol size="md-10 md-offset-1">
+                    <Favorites>
+                    </Favorites>
+                </MDBCol>
+            </MDBRow>
         </MDBContainer>
     );
 }
