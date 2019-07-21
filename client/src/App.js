@@ -1,3 +1,4 @@
+
 import React from 'react'; 
 // import React, { useState, Component }from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -23,7 +24,5 @@ return (
     </div>
   </Router>
 );
-}
 
-export default App;
-
+export default App

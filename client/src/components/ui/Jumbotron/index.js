@@ -20,7 +20,7 @@ const Jumbotron = () => {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-  )
-}
+  );
+};
 
 export default Jumbotron;

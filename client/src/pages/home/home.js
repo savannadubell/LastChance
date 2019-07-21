@@ -1,3 +1,4 @@
+
 import React, {Component} from "react";
 import { MDBRow, MDBCol, MDBContainer} from "mdbreact";
 import Jumbotron from "./../../components/ui/Jumbotron/index";
@@ -17,6 +18,12 @@ render () {
                 <MDBCol size="md-10 md-offset-1">
                     <BlogSection>
                     </BlogSection>
+                </MDBCol>
+            </MDBRow>
+            <MDBRow>
+                <MDBCol size="md-10 md-offset-1">
+                    <Favorites>
+                    </Favorites>
                 </MDBCol>
             </MDBRow>
         </MDBContainer>
