@@ -19,13 +19,13 @@ class Navbar extends Component {
         return (
             <MDBNavbar color="blue-gradient" dark expand="md">
                 <MDBNavbarBrand>
-                    <strong className="white-text">Navbar</strong>
+                    <strong className="white-text">Doodle Belle</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.toggleCollapse} />
                 <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                     <MDBNavbarNav left>
                         <MDBNavItem active>
-                            <MDBNavLink to="../../../pages/home/Home.js">Home</MDBNavLink>
+                            <MDBNavLink to="./../../../pages/home">Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBNavLink to="../../../pages/about/About.js">About Us</MDBNavLink>

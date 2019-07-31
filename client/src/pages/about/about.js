@@ -1,10 +1,10 @@
-
 import React, {Component} from "react";
 import { MDBRow, MDBCol, MDBContainer} from "mdbreact";
 import Jumbotron from "./../../components/ui/Jumbotron/index";
-import BlogSection from "./../../components/ui/BlogSection/index";
+// import Team from "./../../components/ui/Team/index";
+import BlogSection from "../../components/ui/BlogSection";
 
-class Home extends Component {
+class About extends Component {
 
 render () {
     return (
@@ -16,8 +16,7 @@ render () {
             </MDBRow>
             <MDBRow>
                 <MDBCol size="md-12">
-                    <BlogSection>
-                    </BlogSection>
+                    <BlogSection></BlogSection>
                 </MDBCol>
             </MDBRow>
         </MDBContainer>
@@ -25,4 +24,4 @@ render () {
 }
 }
 
-export default Home; 
+export default About; 

@@ -50,7 +50,7 @@ const BlogSection = () => {
             <a href="#!" className="blue-text">
               <h6 className="font-weight-bold mb-3">
                 <MDBIcon icon="home" className="pr-2" />
-                Guardian Hom
+                Guardian Home
               </h6>
             </a>
             <h3 className="font-weight-bold mb-3 p-0">
