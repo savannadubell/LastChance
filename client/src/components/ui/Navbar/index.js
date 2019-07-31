@@ -19,22 +19,24 @@ class Navbar extends Component {
         return (
             <MDBNavbar color="blue-gradient" dark expand="md">
                 <MDBNavbarBrand>
+                    <MDBNavLink to="/">
                     <strong className="white-text">Doodle Belle</strong>
+                    </MDBNavLink>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.toggleCollapse} />
                 <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                     <MDBNavbarNav left>
                         <MDBNavItem active>
-                            <MDBNavLink to="./../../../pages/home">Home</MDBNavLink>
+                            <MDBNavLink to="/">Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="../../../pages/about/About.js">About Us</MDBNavLink>
+                            <MDBNavLink to="/about">About Us</MDBNavLink>
                         </MDBNavItem>
-                        <MDBNavItem>
+                        {/* <MDBNavItem>
                             <MDBNavLink to="../../../pages/guardian home/GuardianHome.js">Guardian Home</MDBNavLink>
-                        </MDBNavItem>
+                        </MDBNavItem> */}
                         <MDBNavItem>
-                            <MDBNavLink to="../../product/Products.js">Shop</MDBNavLink>
+                            <MDBNavLink to="/shop">Shop</MDBNavLink>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav right>

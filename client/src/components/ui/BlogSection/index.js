@@ -2,6 +2,8 @@ import React from "react";
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import LabStud from "../../../assets/images/Past Litter/LabStud.jpg";
 import RiverLab from "../../../assets/images/Past Litter/RiverLabradoodle3.jpeg";
+import './blog.css';
+
 const BlogSection = () => {
   return (
     <MDBCard className="my-5 px-5 pb-5">
@@ -15,7 +17,7 @@ const BlogSection = () => {
         </p>
         <MDBRow>
           <MDBCol lg="5">
-            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+            <MDBView className="rounded z-depth-2 mb-lg-0 mb-0" hover waves>
               <img
                 className="img-fluid"
                 src={LabStud}
